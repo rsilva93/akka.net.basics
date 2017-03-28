@@ -1,8 +1,8 @@
 .vs/*
 
-src/Reader/bin/*
-src/Reader/obj/*
+packages/*
+
+src/Echo/bin/*
+src/Echo/obj/*
 src/Shared/bin/*
 src/Shared/obj/*
-src/Writer/bin/*
-src/Writer/obj/*
