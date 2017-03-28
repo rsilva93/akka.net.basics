@@ -17,8 +17,6 @@ namespace Echo
 
             var echoActor = actorSystem.ActorOf(echoProps);
 
-            Thread.Sleep(1000);
-
             writerActor.Tell(new SimpleMessage("Let's play. Tell me something. Say 'bye' to give up."));
 
             var text = Console.ReadLine();
