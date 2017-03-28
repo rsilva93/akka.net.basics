@@ -1,16 +1,7 @@
-﻿using System;
-
-namespace Shared
+﻿namespace Shared
 {
-    public class SimpleMessage
+    public class SimpleMessage : BaseMessage
     {
-        public SimpleMessage(DateTime date, string content)
-        {
-            Date = date;
-            Content = content;
-        }
-
-        public DateTime Date { get; }
-        public string Content { get; }
+        public SimpleMessage(string content) : base(content) { }
     }
 }

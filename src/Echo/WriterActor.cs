@@ -2,7 +2,7 @@
 using Shared;
 using System;
 
-namespace Writer
+namespace Echo
 {
     public class WriterActor : ReceiveActor
     {
@@ -10,7 +10,13 @@ namespace Writer
         {
             Receive<SimpleMessage>(message =>
             {
-                Console.WriteLine($"{message.Date.ToString("dd/MM/yyyy hh:mm:dd")}: {message.Content}");
+                Console.WriteLine(message.ToString());
+            });
+
+            Receive<EchoMessage>(message =>
+            {
+                Console.WriteLine(message.ToString());
+                Context.Sender.Tell(new SimpleMessage(message.Content));
             });
         }
     }
