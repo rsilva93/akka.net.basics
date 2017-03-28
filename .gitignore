@@ -1,0 +1,8 @@
+.vs/*
+
+src/Reader/bin/*
+src/Reader/obj/*
+src/Shared/bin/*
+src/Shared/obj/*
+src/Writer/bin/*
+src/Writer/obj/*
